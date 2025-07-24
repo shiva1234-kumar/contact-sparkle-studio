@@ -22,7 +22,7 @@ const Navigation = () => {
               <Sparkles className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Sparkle Studio
+              Tagsol Nova
             </span>
           </div>
 
