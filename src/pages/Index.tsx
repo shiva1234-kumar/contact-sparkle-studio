@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ContactForm from '@/components/ContactForm';
+import SocialMediaSection from '@/components/SocialMediaSection';
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <section id="contact-form" className="py-16 bg-gradient-secondary">
         <ContactForm />
       </section>
+      <SocialMediaSection />
     </div>
   );
 };

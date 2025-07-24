@@ -6,7 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram, Youtube, Twitter } from 'lucide-react';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -112,6 +112,40 @@ const ContactForm = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Social Media Section */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg hover-lift transition-all duration-300 hover:scale-110"
+                >
+                  <Instagram className="h-6 w-6 text-white group-hover:animate-pulse" />
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 bg-gradient-to-br from-red-500 to-red-600 rounded-lg hover-lift transition-all duration-300 hover:scale-110"
+                >
+                  <Youtube className="h-6 w-6 text-white group-hover:animate-pulse" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg hover-lift transition-all duration-300 hover:scale-110"
+                >
+                  <Twitter className="h-6 w-6 text-white group-hover:animate-pulse" />
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Stay updated with our latest news, insights, and behind-the-scenes content.
+              </p>
+            </div>
           </div>
         </div>
 
