@@ -1,0 +1,102 @@
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { ArrowDown, Sparkles } from 'lucide-react';
+import heroIllustration from '@/assets/contact-hero-illustration.png';
+
+const HeroSection = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl floating"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl floating" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-primary/3 rounded-full blur-3xl floating" style={{ animationDelay: '4s' }}></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="space-y-8 animate-fade-in-up">
+            <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <span className="text-sm font-medium text-primary">Professional Solutions</span>
+            </div>
+            
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Get in Touch
+              </span>
+            </h1>
+            
+            <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+              Thanks for your interest in our company. Choose from the options below and we'll connect you with the right person to discuss your needs.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                onClick={scrollToContact}
+                className="bg-gradient-primary hover:opacity-90 transition-opacity text-lg px-8 py-6 font-semibold pulse-glow"
+                size="lg"
+              >
+                Send a Message
+                <ArrowDown className="ml-2 h-5 w-5" />
+              </Button>
+              
+              <Button
+                variant="outline"
+                className="border-primary/30 text-primary hover:bg-primary/10 transition-colors text-lg px-8 py-6 font-semibold"
+                size="lg"
+              >
+                View Our Work
+              </Button>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-primary/20">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">500+</div>
+                <div className="text-sm text-muted-foreground">Happy Clients</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-sm text-muted-foreground">Countries</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Support</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero Illustration */}
+          <div className="relative animate-slide-in-right">
+            <div className="relative z-10 floating">
+              <img
+                src={heroIllustration}
+                alt="Professional team collaboration"
+                className="w-full h-auto max-w-lg mx-auto"
+              />
+            </div>
+            
+            {/* Decorative elements */}
+            <div className="absolute top-1/4 -left-8 w-24 h-24 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 -right-8 w-32 h-32 bg-accent/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
