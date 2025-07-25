@@ -8,44 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light Professional Education Theme */
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    /* Warm Educational Theme - Orange & Teal */
+    --background: 45 40% 96%;
+    --foreground: 210 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 45 20% 98%;
+    --card-foreground: 210 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 45 20% 98%;
+    --popover-foreground: 210 30% 15%;
 
-    --primary: 210 100% 50%;
+    --primary: 25 95% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 15% 90%;
-    --secondary-foreground: 215 25% 20%;
+    --secondary: 180 25% 85%;
+    --secondary-foreground: 210 30% 20%;
 
-    --muted: 210 10% 92%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 45 15% 90%;
+    --muted-foreground: 210 20% 45%;
 
-    --accent: 210 15% 95%;
-    --accent-foreground: 215 25% 20%;
+    --accent: 180 30% 92%;
+    --accent-foreground: 210 30% 20%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 85%;
-    --input: 210 10% 95%;
-    --ring: 210 100% 50%;
+    --border: 45 20% 80%;
+    --input: 45 15% 94%;
+    --ring: 25 95% 55%;
 
-    /* Education-themed gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(200 90% 55%));
-    --gradient-secondary: linear-gradient(135deg, hsl(210 20% 98%), hsl(210 15% 95%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 20% 98%) 0%, hsl(210 15% 95%) 100%);
+    /* Vibrant education gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 90% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 40% 85%), hsl(190 35% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(45 40% 96%) 0%, hsl(180 25% 92%) 100%);
     
-    /* Soft shadows for light theme */
-    --shadow-elegant: 0 25px 50px -12px hsl(210 50% 20% / 0.15);
-    --shadow-card: 0 10px 15px -3px hsl(210 30% 50% / 0.1);
-    --shadow-glow: 0 0 40px hsl(210 100% 50% / 0.2);
+    /* Warm colorful shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(25 60% 40% / 0.15);
+    --shadow-card: 0 10px 15px -3px hsl(25 40% 50% / 0.12);
+    --shadow-glow: 0 0 40px hsl(25 95% 55% / 0.25);
     
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
