@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
-import heroIllustration from '@/assets/contact-hero-illustration.png';
+import heroIllustration from '@/assets/school-hero-illustration.png';
 
 const HeroSection = () => {
   const scrollToContact = () => {
