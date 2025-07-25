@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
-import heroIllustration from '@/assets/realistic-classroom.png';
+import classroom1 from '@/assets/classroom-1.png';
+import classroom2 from '@/assets/classroom-2.png';
+import classroom3 from '@/assets/classroom-3.png';
+import classroom4 from '@/assets/classroom-4.png';
 
 const HeroSection = () => {
+  const classroomImages = [classroom1, classroom2, classroom3, classroom4];
+  const [currentImage, setCurrentImage] = useState(classroomImages[0]);
+
+  useEffect(() => {
+    // Randomly select an image on component mount (page refresh)
+    const randomIndex = Math.floor(Math.random() * classroomImages.length);
+    setCurrentImage(classroomImages[randomIndex]);
+  }, []);
+
   const scrollToContact = () => {
     document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -76,9 +88,9 @@ const HeroSection = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative z-10 floating">
               <img
-                src={heroIllustration}
-                alt="Professional team collaboration"
-                className="w-full h-auto max-w-lg mx-auto"
+                src={currentImage}
+                alt="Classroom with children and teacher"
+                className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-elegant"
               />
             </div>
             

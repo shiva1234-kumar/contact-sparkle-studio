@@ -18,9 +18,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-primary rounded-lg">
-              <Sparkles className="h-6 w-6 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/4a388e6d-b253-4e78-83f1-f58efd15d9c4.png" 
+              alt="Tagsol Nova LLP Logo" 
+              className="w-8 h-8"
+            />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Tagsol Nova LLP
             </span>
